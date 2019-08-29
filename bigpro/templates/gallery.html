@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+<html>
+<head>
+    <title>Gellery Page</title>
+</head>
+
+<body>
+{% block content %}
+    <style>
+    .row1{
+        margin-top: 20px;
+        margin-bottom: 30px;
+        margin-outside: 20px;
+    }
+
+</style>
+    <div class="container">
+    <div class="row" id="hd">
+        <div class="col-md-6">
+            <img src="{% static 'images/Nt.jpg' %}" style="width: 150%"; height="50%">
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'images/Tiger.jpg'%}" style="width: 150%" height="50%">
+        </div>
+            <div class="row1" id="row3" >
+                <div class="col-md-6">
+                    <img src="{% static 'images/rj.jpg' %}" style="width: 150%"; height="50%">
+                </div>
+                <div class="col-md-6">
+                    <img src="{% static 'images/rb.png' %}" style="width: 150%"; height="50%">
+                </div>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="col-md-6">
+
+            <img src="{% static 'images/Tiger.jpg' %}" style="width: 100%"; height="50%">
+            </div>
+            <div class="col-md-6">
+                <img src="{% static 'images/rj.jpg' %}" style="width: 100%"; height="50%">
+            </div>
+        </div>
+    <div class=""
+    </div>
+    </div>
+
+
+
+
+
+
+{% endblock %}
+</body>
+</html>
